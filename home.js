@@ -40,7 +40,22 @@ console.log(fruits);
 fruits.unshift('moreOranges'); // add first element to an array
 console.log(fruits);
 
-let vegetables = new Array('Spargel', 'Tomate', 'Karotte');
+let vegetables = new Array('spargel', 'tomate', 'karotte');
 let allGroceries = fruits.concat(vegetables);
 console.log(allGroceries);
+console.log(allGroceries.slice(1, 4));
+console.log(allGroceries.reverse());
+console.log(allGroceries.sort());
+
+let someNumbers = [5, 10, 2, 12, 56, 35, 57, 69, 99, 321, 123, 345, 0]
+console.log(someNumbers.sort(function(a, b) {return a-b})); // sorted in ascendind order
+console.log(someNumbers.sort(function (a, b) {return b-a}));// sorted in descending order
+
+let emptyArray = new Array();
+for (let num = 0; num < 10; num++) {
+    emptyArray.push(num);
+}
+console.log(emptyArray);
+
+
 
